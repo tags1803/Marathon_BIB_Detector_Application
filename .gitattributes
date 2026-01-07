@@ -1,0 +1,4 @@
+models/** filter=lfs diff=lfs merge=lfs -text
+PP-OCRv5_mobile_rec/** filter=lfs diff=lfs merge=lfs -text
+PP-OCRv5_server_det/** filter=lfs diff=lfs merge=lfs -text
+annotated_outputs2/** filter=lfs diff=lfs merge=lfs -text
