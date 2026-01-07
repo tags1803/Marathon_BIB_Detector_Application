@@ -1,0 +1,20 @@
+# Core numerical (ABI compatible)
+numpy==1.26.4
+
+# OpenCV (NumPy 1.x compatible)
+opencv-python-headless==4.9.0.80
+
+# Deep learning
+torch==2.1.0
+torchvision==0.16.0
+ultralytics==8.3.240
+
+# OCR
+paddlepaddle==2.6.2
+paddleocr==2.7.0.3
+
+# Database
+mysql-connector-python==9.5.0
+
+# Utilities
+tqdm==4.67.1

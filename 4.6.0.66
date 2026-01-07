@@ -1,0 +1,2 @@
+Requirement already satisfied: opencv-python in c:\users\tagor\anaconda3\envs\paddle\lib\site-packages (4.6.0.66)
+Requirement already satisfied: numpy>=1.14.5 in c:\users\tagor\anaconda3\envs\paddle\lib\site-packages (from opencv-python) (2.0.2)

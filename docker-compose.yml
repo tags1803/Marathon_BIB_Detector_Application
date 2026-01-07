@@ -1,0 +1,30 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: marathon_bibs
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  bib-region:
+    image: bib-region:1.0
+    container_name: bib-region
+    depends_on:
+      - mysql
+    environment:
+      MYSQL_HOST: mysql
+      MYSQL_USER: root
+      MYSQL_PASSWORD: root
+      MYSQL_DB: marathon_bibs
+    volumes:
+      - ./models:/app/models
+      - ./PP-OCRv5_server_det:/app/PP-OCRv5_server_det
+      - ./PP-OCRv5_mobile_rec:/app/PP-OCRv5_mobile_rec
+      - ./test_data:/app/input
+      - ./annotated_outputs2:/app/output
+
+volumes:
+  mysql_data:

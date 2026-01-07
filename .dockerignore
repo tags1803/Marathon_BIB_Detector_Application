@@ -1,0 +1,31 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE / editor
+.vs/
+.idea/
+
+# Large data folders (DO NOT bake into image)
+Data/
+test_data/
+test_video/
+annotated_outputs2/
+cropped_output1/
+
+# Media files
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+
+# Logs
+*.log
+
+# Git
+.git/
+.gitignore
